@@ -40,11 +40,68 @@ npm run dev
 | Qdrant | qdrant.run8n.xyz |
 | Real-time | realtime.run8n.xyz |
 
-## More Templates (Coming)
+## Planned Templates
 
-- `run8n-realtime` - WebSocket apps with Soketi
-- `run8n-ai` - RAG/vector search with Qdrant
-- `run8n-mcp` - MCP server template
+### realtime/
+WebSocket apps with Soketi (Pusher-compatible).
+
+**Use cases:** Multiplayer games, live cursors, chat, collaborative editing, notifications
+
+**Stack:** Vite + pusher-js + Soketi at `realtime.run8n.xyz`
+
+---
+
+### ai/
+RAG and vector search apps with Qdrant.
+
+**Use cases:** Document search, AI chatbots, semantic search, embeddings
+
+**Stack:** Vite + Qdrant + OpenAI/local embeddings + Windmill
+
+---
+
+### admin/
+NocoDB-backed admin panels.
+
+**Use cases:** Internal tools, CRUD dashboards, data management
+
+**Stack:** NocoDB REST API + simple frontend, no Prisma needed
+
+---
+
+### mcp/
+MCP (Model Context Protocol) server template.
+
+**Use cases:** Claude Code integrations, custom AI tools, API wrappers
+
+**Stack:** TypeScript + MCP SDK, based on siyuan-mcp-server
+
+---
+
+### container/
+Full backend apps with Docker deployment.
+
+**Use cases:** When you need < 50ms latency, complex backends, Python/FastAPI
+
+**Stack:** FastAPI or Express + Docker + CI/CD to server
+
+---
+
+### saas/
+SaaS starter with Stripe billing.
+
+**Use cases:** Subscription apps, paid tools, freemium products
+
+**Stack:** fullstack + Stripe + subscription management
+
+---
+
+## Contributing
+
+To add a template:
+1. Create folder with template name
+2. Include `CLAUDE.md` (AI instructions) and `README.md` (human docs)
+3. Add deploy script in `scripts/`
 
 ## License
 
