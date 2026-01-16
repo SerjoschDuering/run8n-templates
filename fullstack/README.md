@@ -1,10 +1,12 @@
 # run8n Fullstack Template
 
+**Status: Template outline - not fully tested**
+
 A fullstack web app template using the run8n self-hosted stack.
 
 ## Features
 
-- Vite + Vue 3 + TypeScript frontend
+- Vite + React 18 + TypeScript + Zustand + Tailwind CSS frontend
 - GoTrue authentication (email/password, OAuth)
 - Prisma ORM with PostgreSQL + PostGIS
 - Windmill serverless backend

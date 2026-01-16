@@ -2,6 +2,22 @@
 
 Project starter templates for the run8n self-hosted stack.
 
+## Claude Code Skills
+
+When working with these templates, invoke the relevant skills:
+
+| Skill | Command | Use For |
+|-------|---------|---------|
+| `run8n-stack` | `skill: "run8n-stack"` | Infrastructure, deployment, Windmill, n8n |
+| `react-best-practices` | `skill: "react-best-practices"` | React/Zustand performance, re-renders, data fetching |
+| `web-design-guidelines` | `skill: "web-design-guidelines"` | Accessibility, forms, animations, UI polish |
+
+**Install skills:**
+```bash
+# From the run8n-plugins repo
+/plugin install SerjoschDuering/run8n-plugins
+```
+
 ## Templates
 
 ### [static/](./static)
@@ -10,9 +26,15 @@ Simple HTML/CSS static sites. No build step. Deploy with rsync.
 **Best for:** Landing pages, portfolios, simple sites
 
 ### [fullstack/](./fullstack)
-Vite + Vue + Prisma + Windmill. Full authentication and database.
+Vite + React 18 + TypeScript + Zustand + Tailwind + Prisma + Windmill.
 
 **Best for:** Web apps, dashboards, SaaS MVPs
+
+**Stack:**
+- Frontend: React 18, Zustand (state), Tailwind CSS
+- Auth: GoTrue (`auth.run8n.xyz`)
+- Backend: Windmill scripts (serverless)
+- Database: PostgreSQL + PostGIS via Prisma
 
 ## Usage
 

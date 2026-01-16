@@ -1,0 +1,13 @@
+# Core
+pydantic-ai>=0.1.0
+pydantic-graph>=0.1.0
+
+# Durable execution
+dbos>=0.1.0
+
+# Vector search
+qdrant-client>=1.7.0
+
+# Database
+psycopg2-binary>=2.9.0
+asyncpg>=0.29.0
